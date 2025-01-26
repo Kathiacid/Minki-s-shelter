@@ -1,0 +1,57 @@
+
+*{/* como los imports*/
+    margin:0%;/*quitar margenes externos*/
+    padding:0%;
+}
+/* Navegador */
+
+.container-button {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    width: 500px;
+    margin-left: auto;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    padding: 10px;
+    background-color: #A78B71;
+}
+
+/* imagen y portada*/
+.portada {
+
+    background-image:linear-gradient(to right,rgb(0 0 0/.2),rgb(0 0 0 /.5)),url(img/portada.jpg);
+    width:100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+.text-portada {
+    z-index: 1;
+    position: absolute; 
+    top: 30%;
+    left: 5%; 
+    z-index: 1; 
+    width:20%; 
+    padding: 20px; 
+    color:white
+}
+
+
+
+
+
+/*position:relative;/*para que sea la guia a la cual  se va a ajustar*/
+/*position:absolute;/*para que ajuste al relative, ajusta sobre la imagen*/
+/*overflow: hidden; para que no se desborde la imagen*/
+/*object-fit: cover;  Mantiene la proporción de la imagen y la recorta si es necesario para cubrir todo el área */
+
+/*#583E26
+#A78B71
+#F7C815
+#EC9704
+#9C4A1A*/
