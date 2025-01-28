@@ -41,9 +41,24 @@
     color:white
 }
 
+/* carrucel*/
+.carrucel-fotos1{
+    position:relative;
+    width:100%;
+    max-width:600px;
+    margin:auto;
+    overflow:hidden;
+}
 
+.fotos1{
+    display: flex;
+    transition: transform 0.5s ease;
 
-
+}
+.carrucel-fotos img{
+    width: 100%;
+    height: auto;
+}
 
 /*position:relative;/*para que sea la guia a la cual  se va a ajustar*/
 /*position:absolute;/*para que ajuste al relative, ajusta sobre la imagen*/
