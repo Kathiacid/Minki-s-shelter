@@ -43,16 +43,17 @@
 
 
 /*about*/
-.texto-about{
-    border: 5px solid red;
-}
+
 .text-about {
-    border: 5px solid purple;
     text-align: center;
     margin:40px
-
 }
+
 /* carrucel*/
+.contenedor-fotos{
+    display:flex;
+    border: 5px solid blue;
+}
 .carrucel-fotos1{
     position: relative;
     margin-left: 37%;
@@ -64,6 +65,8 @@
     background: #e0e0e0;
     box-shadow: 24px 24px 47px #bebebe,
                 -24px -24px 47px #ffffff;
+    display: flex;
+
     }
 
 .fotos1 {
@@ -95,6 +98,41 @@
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* testionios*/
+.testimonios-container{
+    border: 5px solid pink;
+    gap: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+.testimonio-1{
+    background-color: antiquewhite;
+    width: 600px;
+    height: 400px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5%;
+    border: 5px solid pink;
+}
+.testimonio-2{
+    background-color: antiquewhite;
+    width:600px ;
+    height: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5%;
+    border: 5px solid pink;
+}
+.testimonios-container img{
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.testimonios-container p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
 /*position:relative;/*para que sea la guia a la cual  se va a ajustar*/
 /*position:absolute;/*para que ajuste al relative, ajusta sobre la imagen*/
