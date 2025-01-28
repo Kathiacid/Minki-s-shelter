@@ -52,7 +52,8 @@
 /* carrucel*/
 .contenedor-fotos{
     display:flex;
-    border: 5px solid blue;
+    position: relative;
+    z-index: 2;
 }
 .carrucel-fotos1{
     position: relative;
@@ -100,11 +101,15 @@
 
 /* testionios*/
 .testimonios-container{
-    border: 5px solid pink;
     gap: 50px;
     text-align: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    margin-top:-420px; 
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .testimonio-1{
     background-color: antiquewhite;
@@ -113,7 +118,7 @@
     margin-top: 5px;
     margin-bottom: 5px;
     border-radius: 5%;
-    border: 5px solid pink;
+
 }
 .testimonio-2{
     background-color: antiquewhite;
@@ -122,7 +127,7 @@
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 5%;
-    border: 5px solid pink;
+
 }
 .testimonios-container img{
     width: 250px;
