@@ -8,8 +8,7 @@ let index = 0;
 
 // Función para mostrar la foto actual
 function mostrarFoto() {
-  const anchoFoto = fotos[0].clientWidth; // Calcula el ancho de una imagen
-  fotosContainer.style.transform = `translateX(${-index * anchoFoto}px)`;
+  fotosContainer.style.transform = `translateX(${-index * 400}px)`;
 }
 
 // Botón "Siguiente"
