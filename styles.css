@@ -1,12 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
-*{/* como los imports*/
-    margin:0%;/*quitar margenes externos*/
-    padding:0%;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-/* Navegador */
 
+
+/* Navegador */
+nav{
+    display: grid;
+    grid-template-columns:50px 1fr ;
+    width: 100%;
+    background-color: #988068;
+}
 .container-button {
     display: flex;
     justify-content: center;
@@ -45,11 +53,6 @@
     box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
 }
 
-
-
-
-
-
 /* imagen y portada*/
 .portada {
 
@@ -82,6 +85,7 @@
     font-family: "Libre Franklin", serif;
     font-size: 40px;
 }
+
 /*about*/
 .about {
     border: 5px solid blue;
@@ -97,14 +101,14 @@
     width: 100dvw;
 }
 
-.texto-about h2{
-    font-family:"Dancing Script", serif;
-    font-size:5rem ;
-
+.about p{
+    font-size: 15px;
+    font-family: "Libre Franklin", serif; ;
 }
-.texto-about p{
-    font-family:"Libre Franklin", serif;
-    font-size:1.5rem ;
+.about h2{
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-family: "Noto Sans", serif;
 }
 .degrade{
     height: 100%;
@@ -120,104 +124,57 @@
 /* testionios*/
 .testimonios-container{
     display: flex;
-    text-align: center;
     position: absolute;
+    text-align: center;
     z-index: 1;
-    align-items: center;
-    align-content: center;
     width: 100%;
     justify-content: center; /*lo centra*/
     gap: 50px;
 }
-.testimonio-1{
+
+.testimonio-1,.testimonio-4{
     background-color: rgb(255, 255, 255);
     margin-top: 5px;
     margin-bottom: 5px;
     border-radius: 5%;
     width: 400px;
     height: 560px;
-    font-family: "Libre Franklin", serif;
     box-shadow:1px 1px 47px #bcbcbc,
                 -1px -1px 20px #bcbcbc;
-
+    flex-flow: column wrap;
+    font-weight:600;
+    background: rgb(238,207,174);
+    background: radial-gradient(circle, rgba(238,207,174,1) 0%, rgba(172,102,48,1) 100%);
 }
-.testimonio-2{
+
+.testimonio-2,.testimonio-3{
     background-color: rgb(255, 255, 255);
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 5%;
     width: 400px;
     height: 600px;
-    font-family: "Libre Franklin", serif;
+    font-weight:600;
+    flex-flow: column wrap;
     box-shadow:1px 1px 47px #bcbcbc,
                 -1px -1px 20px #bcbcbc;
+    background: rgb(238,207,174);
+    background: radial-gradient(circle, rgba(238,207,174,1) 0%, rgba(172,102,48,1) 100%);
 
 }
 
-.testimonio-3{
-    background-color: rgb(255, 255, 255);
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 5%;
-    width: 400px;
-    height: 600px;
-    font-family: "Libre Franklin", serif;
-    box-shadow:1px 1px 47px #bcbcbc,
-                -1px -1px 20px #bcbcbc;
-
-}
-.testimonio-4{
-    background-color: rgb(255, 255, 255);
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 5%;
-    width: 400px;
-    height: 550px;
-    font-family: "Libre Franklin", serif;
-    box-shadow:1px 1px 47px #bcbcbc,
-                -1px -1px 20px #bcbcbc;
-
-}
 .testimonios-container img{
     width: 250px;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 10px;
     border: 5px solid orange ;
     border-radius: 50%;
 }
 .testimonios-container p {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-top: 30px;
 }
-
-/*where*/
-.where{
-    border: 5px solid rgb(255, 0, 132);
-    height:100dvh;
-    position: relative;
-    padding: 50px;
-}
-
-.where-text {
-    text-align: center;
-}
-
-.where-text h2{
-    font-family:"Dancing Script", serif;
-    font-size:50px ;
-    margin-bottom: 10px;
-}
-
-.where-text p{
-    font-family: "Libre Franklin", serif;
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-.where-text img{
-    margin-top: 50px;
-}
-
 
 /*position:relative;/*para que sea la guia a la cual  se va a ajustar*/
 /*position:absolute;/*para que ajuste al relative, ajusta sobre la imagen*/
