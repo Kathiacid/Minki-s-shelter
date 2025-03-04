@@ -23,7 +23,7 @@ async function desgloce() {
 
     for (let pet of datos) {
         // Verificar si la raza tiene imagen
-        const imageUrl = pet.image?.url || "https://via.placeholder.com/300"; // Imagen por defecto si no hay
+        const imageUrl = pet.image?.url || "img/catapi.jpg"; // Imagen por defecto si no hay
 
         contenedor.insertAdjacentHTML("beforeend", `
             <div class="breed-card">
