@@ -414,15 +414,33 @@ nav{
     margin-bottom: 30px;
     text-align: center;
 }
+
 .fotos2 {
-    display: grid;
-    width: 100%;
-    object-fit: cover;/*arregla la imagen para que se vea bien*/
-    border-radius: 2%;
+    display: flex;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+    grid-auto-rows: min-content;
+    overflow: hidden;
+    background-color: #CB986C;
+    padding: 10px;
+    border-radius:10px;
+
 }
 
 .fotos2 img{
-    
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 2%;
+    width: 200px;
+    height: 200px;
+    border: 5px solid pink;
+
+}
+
+.fotos2 h4{
+    font-size: 15px;
+    font-family: "Libre Franklin", serif; ;
+    border: 5px solid cornflowerblue;
+
 }
 
 /*position:relative;/*para que sea la guia a la cual  se va a ajustar*/
