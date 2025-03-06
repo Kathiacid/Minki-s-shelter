@@ -68,7 +68,6 @@ nav{
     background-size: cover;
     z-index: -1;
     position:relative;
-    margin-top:-85px;
 }
 .text-portada {
     z-index: 1;
@@ -408,40 +407,140 @@ nav{
     font-family:"Libre Franklin", serif; 
 }
 
-.titulo h2{
+/*pagina about*/
+
+
+/* nav */
+
+.titulo {
+    background-color: #CB986C;
+    display: flex;
+    gap: 20px;
+    position: fixed;
+    width: 100%;
+    height:80px ;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: center;
+    top:0;
+    left:0;
+    z-index: 1000;
+}
+.texttitulo {
     font-family:"Noto Sans", serif;
-    font-size:45px ;
-    margin-bottom: 30px;
-    text-align: center;
+    font-size:25px ;
 }
 
+
+.back a{
+    text-decoration: none;
+    font-family: "Libre Franklin", serif;
+    border-radius: 50px;
+    box-shadow: inset 4px 4px 10px #b48613, inset -4px -4px 10px #bd8d5d;
+    color: #ededed;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 15px 40px;
+    transition: all 0.2s ease-in-out;
+    border: 2px solid #b8895f;
+}
+.back a:hover {
+    box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #b27c2cde;
+    }
+
+.back a:focus{
+    outline: none;
+    box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
+}
+
+/*tarjetas*/
+
+
 .fotos2 {
-    display: flex;
+    display:grid;
     grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
     grid-auto-rows: min-content;
     overflow: hidden;
-    background-color: #CB986C;
+    gap:10px;
     padding: 10px;
     border-radius:10px;
+    margin-top: 100px;
 
 }
 
+
+.gato1,.gato2,.gato3,.gato4,.gato5,.gato6{
+    background-color: #CB986C;
+    border-radius:3%  ;
+    width: 300px;
+
+}
 .fotos2 img{
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 2%;
-    width: 200px;
-    height: 200px;
-    border: 5px solid pink;
+    width: 300px;
+    height: 300px;
 
 }
 
 .fotos2 h4{
     font-size: 15px;
-    font-family: "Libre Franklin", serif; ;
-    border: 5px solid cornflowerblue;
+    font-family: "Libre Franklin", serif;
+    text-align: center;
+    padding:5px
 
 }
+
+/*proceso de adopcion*/
+
+.proceso-adopcion {
+    margin-top: 20px;
+}
+
+.proceso-adopcion h2{
+    font-family:"Noto Sans", serif;
+    font-size:50px ;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.proceso-adopcion p{
+    font-family: "Libre Franklin", serif;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+/*from*/
+
+.formulario{
+    display: grid;
+    background-color:#e9c4a3 ;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+.formulario h2{
+    font-family:"Noto Sans", serif;
+    font-size: 30px;
+    margin-top: 5px;
+}
+.formulario h3{
+    font-family:"Noto Sans", serif;
+    font-size: 25px;
+}
+.formulario label,li {
+    font-family: "Libre Franklin", serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.formulario input{
+    border:2px solid rgb(212, 131, 59);
+    font-family: "Libre Franklin", serif;
+    font-size: 20px;
+
+}
+
+
 
 /*position:relative;/*para que sea la guia a la cual  se va a ajustar*/
 /*position:absolute;/*para que ajuste al relative, ajusta sobre la imagen*/
